@@ -18,7 +18,7 @@ int Cross::checkCross(Cube &cube) { //must check if in correct position as well
 
 void Cross::solveEdge(Cube &cube) {
 
-  //Check edges on all sides --- don't forget, white can be in wrong position on the bottom
+  //Check edges on all sides
   for (int side=0; side<6; ++side) {
     for (int edge = 1; edge<9; edge+=2) {
       if (cube.cubies[edge][side] == 0) {
