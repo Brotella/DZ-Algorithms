@@ -1,13 +1,10 @@
 #include "Corners.hpp"
 #include "Cube.hpp"
 
-
-//Current version gets caught in a loop
-
 void Corners::solveCorners(Cube &cube) {
   while (checkBottomLayer(cube)) {
 
-    //get a white corner into the top layer
+
 
     if (cube.cubies[0][0] == 0 || cube.cubies[6][2] == 0 || cube.cubies[8][5] == 0) {
       while (cube.cubies[6][1] == 0 || cube.cubies[0][2] == 0 || cube.cubies[2][5] == 0 ) {
